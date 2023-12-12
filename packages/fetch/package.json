@@ -1,6 +1,6 @@
 {
   "name": "@noahyu/nuxt-fetch",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Secure and easy http proxy integration with Nuxt.js",
   "main": "./dist/module.cjs",
   "module": "./dist/module.mjs",
