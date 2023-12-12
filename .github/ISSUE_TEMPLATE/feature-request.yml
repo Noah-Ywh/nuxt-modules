@@ -1,0 +1,27 @@
+name: '🚀 Feature request'
+description: Suggest a feature that will improve Paint Nuxt modules
+labels: ['💡pending triage']
+body:
+  - type: checkboxes
+    id: package
+    attributes:
+      label: Select the package
+      description: 选择对应的库
+      options:
+        - label: '@noahyu/nuxt-fetch'
+        - label: '@noahyu/nuxt-route'
+  - type: textarea
+    id: feature
+    attributes:
+      label: Describe the feature
+      description: 请描述您的需求
+    validations:
+      required: true
+  - type: checkboxes
+    id: PR
+    attributes:
+      label: Additional information
+      description: 我们还想了解更多的信息.
+      options:
+        - label: 您是否有提交 PR 的计划?
+        - label: 您是否急需使用此功能?

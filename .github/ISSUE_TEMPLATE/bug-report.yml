@@ -1,0 +1,69 @@
+name: '🐛 Bug report'
+description: Create a report to help us improve Paint Nuxt modules
+labels: ['💡pending triage']
+body:
+  - type: checkboxes
+    id: package
+    attributes:
+      label: Select the package
+      description: 选择对应的库
+      options:
+        - label: '@noahyu/nuxt-fetch'
+        - label: '@noahyu/nuxt-route'
+  - type: textarea
+    id: bug-env
+    attributes:
+      label: Environment
+      description: 提供您的环境信息
+      value: |
+        - Vue Version:
+        - Nuxt Version:
+        - Node Version:
+        - Browser/OS:
+        - Builder Tool:
+        - Package Manager:
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: 请提供您的线上案例
+      placeholder: Reproduction
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Describe the bug
+      description: 描述您遇到的问题
+      placeholder: Bug description
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected
+      description: 预期效果
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual
+      description: 实际效果
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: 日志信息
+      render: shell-script
+  - type: checkboxes
+    id: PR
+    attributes:
+      label: Additional information
+      description: 我们还想了解更多的信息.
+      options:
+        - label: 您是否有提交 PR 的计划?
+        - label: 您是否急需修复此功能?
+  - type: textarea
+    id: comments
+    attributes:
+      label: Any additional comments
+      description: 您还想提供哪些信息？
