@@ -2,16 +2,16 @@
   "name": "playground",
   "private": true,
   "scripts": {
-    "dev": "nuxi dev",
+    "dev": "nuxi dev --host",
     "preview": "nuxi preview",
     "nuxt-prepare": "nuxt prepare"
   },
   "devDependencies": {
     "@noahyu/nuxt-fetch": "workspace:*",
     "@noahyu/nuxt-route": "workspace:*",
-    "nuxt": "^3.11.1",
-    "sass": "^1.74.1",
-    "vue": "^3.4.21"
+    "nuxt": "^3.15.4",
+    "sass": "^1.83.4",
+    "vue": "^3.5.13"
   },
   "browserslist": [
     "last 2 version",

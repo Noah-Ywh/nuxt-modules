@@ -1,8 +1,9 @@
 // commitlint.config.js
 /** @type {import('cz-git').UserConfig} */
-module.exports = {
+export default {
   extends: ['@commitlint/config-conventional'],
   rules: {
+    // @see: https://commitlint.js.org/#/reference-rules
     'type-enum': [
       2,
       'always',
@@ -115,10 +116,7 @@ module.exports = {
     allowCustomScopes: true,
     allowEmptyScopes: true,
     scopes: [],
-    scopeOverrides: {
-      feat: [{ name: 'fetch' }, { name: 'route' }],
-      fix: [{ name: 'fetch' }, { name: 'route' }],
-    },
+    scopeOverrides: {},
 
     customIssuePrefixAlign: 'top',
     customIssuePrefixAlias: 'custom',

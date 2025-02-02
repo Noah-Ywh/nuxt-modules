@@ -4,6 +4,7 @@ export default defineNuxtConfig({
       title: 'Nuxt Modules',
     },
   },
+
   modules: [
     [
       '@noahyu/nuxt-fetch',
@@ -37,7 +38,10 @@ export default defineNuxtConfig({
       },
     ],
   ],
+
   devServer: {
-    port: 3001,
+    port: 3002,
   },
+
+  compatibilityDate: '2025-02-02',
 })

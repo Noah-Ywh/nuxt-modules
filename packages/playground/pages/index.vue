@@ -9,14 +9,14 @@ interface Res {
 const getExampleRes = ref<Res | null>(null)
 const getExample = async () => {
   // 注入响应数据的类型：Res
-  const { data, pending, error, refresh } = await useFetch<Res>('/api/posts/1')
+  const { data } = await useFetch<Res>('/api/posts/1')
   getExampleRes.value = data.value
 }
 
 const postExampleRes = ref<Res | null>(null)
 const postExample = async () => {
   // 注入响应数据的类型：Res
-  const { data, pending, error, refresh } = await useFetch<Res>('/example/posts', {
+  const { data } = await useFetch<Res>('/example/posts', {
     method: 'post',
     body: {
       userId: 2,
